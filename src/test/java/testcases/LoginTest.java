@@ -6,7 +6,12 @@ import org.testng.annotations.Test;
 
 import base.BaseClass;
 import pageObjects.LoginPage;
+import pageObjects.HomePage;
 import utilities.ReadConfig;
+
+import org.testng.Assert;
+
+
 
 public class LoginTest extends BaseClass{
 	
@@ -19,6 +24,7 @@ public class LoginTest extends BaseClass{
 	public void verifyLogin() {
 		
 		LoginPage lp = new LoginPage(driver);
+		HomePage hp = new HomePage(driver);
 		
 		ReadConfig readConfig = new ReadConfig();
 		
@@ -33,7 +39,12 @@ public class LoginTest extends BaseClass{
 		lp.enterEmail(email);
 		lp.enterPassword(password);
 		lp.clickLoginButton();
-		System.out.println("Login test executed");
+		
+		Assert.assertTrue(hp.isUserLoggedIn());
+		System.out.println("Login successful");
+		
+		hp.clickLogout();
+		
 	}
 	
 	@AfterMethod

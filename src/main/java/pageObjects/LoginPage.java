@@ -3,18 +3,16 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+import abstractComponents.BasePage;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 	
 	WebDriver driver;
 	
 	//constructor
 	public LoginPage(WebDriver driver) {
 		
-		this.driver = driver;
-		
-		PageFactory.initElements(driver,this);
+		super(driver);
 	}
 	
 	//locators
@@ -30,9 +28,14 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//button[@data-qa='login-button']")
 	WebElement loginButton;
+
+	@FindBy(xpath = "//p[text()='Your email or password is incorrect!']")
+	WebElement invalidLoginMessage;
+	
 	
 	//Action Methods
 	public void clickSignupLogin() {
+		waitForElementToBeClickable(signupLoginBtn);
 		signupLoginBtn.click();
 	}
 	
@@ -45,7 +48,13 @@ public class LoginPage {
 	}
 	
 	public void clickLoginButton() {
+		waitForElementToBeClickable(loginButton);
 		loginButton.click();
+	}
+	
+	public boolean isInvalidLoginMessageDisplayed() {
+
+	    return invalidLoginMessage.isDisplayed();
 	}
 
 }
