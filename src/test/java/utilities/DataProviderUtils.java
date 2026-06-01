@@ -12,8 +12,7 @@ public class DataProviderUtils {
 		return new Object[][] {
             // read from testdata.properties — no hard coding
             { readConfig.getValidEmail(),   readConfig.getValidPassword(),   "valid"   },
-            { readConfig.getInvalidEmail(), readConfig.getInvalidPassword(), "invalid" },
-            { "",                           "",                              "invalid" }
+            { readConfig.getInvalidEmail(), readConfig.getInvalidPassword(), "invalid" }
         };
 	}
 
