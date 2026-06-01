@@ -1,53 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-29T16:28:42 IST" name="Suite" finished-at="2026-05-29T16:29:46 IST" duration-ms="63522">
+  <suite started-at="2026-06-01T17:13:24 IST" name="Suite" finished-at="2026-06-01T17:14:58 IST" duration-ms="94195">
     <groups>
+      <group name="regression">
+        <method signature="LoginTest.verifyLogin()[pri:0, instance:testcases.LoginTest@77cf3f8b]" name="verifyLogin" class="testcases.LoginTest"/>
+        <method signature="NegativeLoginTest.verifyInvalidLogin()[pri:0, instance:testcases.NegativeLoginTest@1df98368]" name="verifyInvalidLogin" class="testcases.NegativeLoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LaunchTest.verifyApplicationLaunch()[pri:0, instance:testcases.LaunchTest@60094a13]" name="verifyApplicationLaunch" class="testcases.LaunchTest"/>
+        <method signature="LoginTest.verifyLogin()[pri:0, instance:testcases.LoginTest@77cf3f8b]" name="verifyLogin" class="testcases.LoginTest"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginTest.verifyLogin()[pri:0, instance:testcases.LoginTest@77cf3f8b]" name="verifyLogin" class="testcases.LoginTest"/>
+        <method signature="NegativeLoginTest.verifyInvalidLogin()[pri:0, instance:testcases.NegativeLoginTest@1df98368]" name="verifyInvalidLogin" class="testcases.NegativeLoginTest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2026-05-29T16:28:42 IST" name="Test" finished-at="2026-05-29T16:29:46 IST" duration-ms="63522">
+    <test started-at="2026-06-01T17:13:24 IST" name="Test" finished-at="2026-06-01T17:14:58 IST" duration-ms="94195">
       <class name="testcases.LaunchTest">
-        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.LaunchTest@776aec5c]" started-at="2026-05-29T16:28:42 IST" name="startApplication" finished-at="2026-05-29T16:28:57 IST" duration-ms="15144" status="PASS">
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.LaunchTest@60094a13]" started-at="2026-06-01T17:13:24 IST" name="startApplication" finished-at="2026-06-01T17:13:54 IST" duration-ms="29836" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="verifyApplicationLaunch()[pri:0, instance:testcases.LaunchTest@776aec5c]" started-at="2026-05-29T16:28:57 IST" name="verifyApplicationLaunch" finished-at="2026-05-29T16:28:58 IST" duration-ms="104" status="PASS">
+        <test-method signature="verifyApplicationLaunch()[pri:0, instance:testcases.LaunchTest@60094a13]" started-at="2026-06-01T17:13:54 IST" name="verifyApplicationLaunch" finished-at="2026-06-01T17:13:54 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyApplicationLaunch -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.LaunchTest@776aec5c]" started-at="2026-05-29T16:28:58 IST" name="closeApplication" finished-at="2026-05-29T16:28:58 IST" duration-ms="523" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.LaunchTest@60094a13]" started-at="2026-06-01T17:13:54 IST" name="closeApplication" finished-at="2026-06-01T17:13:59 IST" duration-ms="5041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- testcases.LaunchTest -->
       <class name="testcases.NegativeLoginTest">
-        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.NegativeLoginTest@15de0b3c]" started-at="2026-05-29T16:29:21 IST" name="startApplication" finished-at="2026-05-29T16:29:33 IST" duration-ms="12787" status="PASS">
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.NegativeLoginTest@1df98368]" started-at="2026-06-01T17:13:24 IST" name="startApplication" finished-at="2026-06-01T17:13:47 IST" duration-ms="23269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="verifyInvalidLogin()[pri:0, instance:testcases.NegativeLoginTest@15de0b3c]" started-at="2026-05-29T16:29:33 IST" name="verifyInvalidLogin" finished-at="2026-05-29T16:29:45 IST" duration-ms="11730" status="PASS">
+        <test-method signature="verifyInvalidLogin()[pri:0, instance:testcases.NegativeLoginTest@1df98368]" started-at="2026-06-01T17:13:47 IST" name="verifyInvalidLogin" finished-at="2026-06-01T17:13:58 IST" duration-ms="10616" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyInvalidLogin -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.NegativeLoginTest@15de0b3c]" started-at="2026-05-29T16:29:45 IST" name="closeApplication" finished-at="2026-05-29T16:29:46 IST" duration-ms="630" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.NegativeLoginTest@1df98368]" started-at="2026-06-01T17:13:58 IST" name="closeApplication" finished-at="2026-06-01T17:13:59 IST" duration-ms="1111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- testcases.NegativeLoginTest -->
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.LoginTest@1a677343]" started-at="2026-05-29T16:28:58 IST" name="startApplication" finished-at="2026-05-29T16:29:07 IST" duration-ms="8892" status="PASS">
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.LoginTest@77cf3f8b]" started-at="2026-06-01T17:13:24 IST" name="startApplication" finished-at="2026-06-01T17:13:47 IST" duration-ms="22667" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApplication -->
-        <test-method signature="verifyLogin()[pri:0, instance:testcases.LoginTest@1a677343]" started-at="2026-05-29T16:29:07 IST" name="verifyLogin" finished-at="2026-05-29T16:29:21 IST" duration-ms="13551" status="PASS">
+        <test-method signature="verifyLogin()[pri:0, instance:testcases.LoginTest@77cf3f8b]" started-at="2026-06-01T17:13:47 IST" name="verifyLogin" finished-at="2026-06-01T17:14:14 IST" duration-ms="27236" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLogin -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.LoginTest@1a677343]" started-at="2026-05-29T16:29:21 IST" name="closeApplication" finished-at="2026-05-29T16:29:21 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.LoginTest@77cf3f8b]" started-at="2026-06-01T17:14:14 IST" name="closeApplication" finished-at="2026-06-01T17:14:15 IST" duration-ms="650" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- testcases.LoginTest -->
+      <class name="testcases.DataDrivenLoginTest">
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:13:59 IST" name="startApplication" finished-at="2026-06-01T17:14:04 IST" duration-ms="4607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApplication -->
+        <test-method signature="verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:04 IST" name="verifyLoginWithMultipleData" data-provider="loginData" finished-at="2026-06-01T17:14:21 IST" duration-ms="17469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[krishnasai7466@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Krish&7466]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithMultipleData -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:21 IST" name="closeApplication" finished-at="2026-06-01T17:14:22 IST" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:22 IST" name="startApplication" finished-at="2026-06-01T17:14:30 IST" duration-ms="7625" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApplication -->
+        <test-method signature="verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:30 IST" name="verifyLoginWithMultipleData" data-provider="loginData" finished-at="2026-06-01T17:14:37 IST" duration-ms="6985" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrongemail@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpassword]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithMultipleData -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:37 IST" name="closeApplication" finished-at="2026-06-01T17:14:37 IST" duration-ms="827" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+        <test-method is-config="true" signature="startApplication()[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:37 IST" name="startApplication" finished-at="2026-06-01T17:14:42 IST" duration-ms="4411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApplication -->
+        <test-method signature="verifyLoginWithMultipleData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:42 IST" name="verifyLoginWithMultipleData" data-provider="loginData" finished-at="2026-06-01T17:14:56 IST" duration-ms="14585" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Your email or password is incorrect!']"}
+  (Session info: chrome=148.0.7778.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aebcd1df0857a2cb62f757ee30222c83, findElement {using=xpath, value=//p[text()='Your email or password is incorrect!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59000}, goog:processID: 7492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59000/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aebcd1df0857a2cb62f757ee30222c83]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Your email or password is incorrect!']"}
+  (Session info: chrome=148.0.7778.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aebcd1df0857a2cb62f757ee30222c83, findElement {using=xpath, value=//p[text()='Your email or password is incorrect!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59000}, goog:processID: 7492, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59000/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aebcd1df0857a2cb62f757ee30222c83
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy28.isDisplayed(Unknown Source)
+at pageObjects.LoginPage.isInvalidLoginMessageDisplayed(LoginPage.java:55)
+at testcases.DataDrivenLoginTest.verifyLoginWithMultipleData(DataDrivenLoginTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithMultipleData -->
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:testcases.DataDrivenLoginTest@21ca139c]" started-at="2026-06-01T17:14:57 IST" name="closeApplication" finished-at="2026-06-01T17:14:58 IST" duration-ms="1442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- testcases.DataDrivenLoginTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

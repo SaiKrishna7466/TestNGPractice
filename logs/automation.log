@@ -1,0 +1,84 @@
+2026-06-01 17:18:49 [TestNG-test-Test-2] INFO  base.BaseClass - Browser selected: chrome
+2026-06-01 17:18:49 [TestNG-test-Test-1] INFO  base.BaseClass - Browser selected: chrome
+2026-06-01 17:18:49 [TestNG-test-Test-3] INFO  base.BaseClass - Browser selected: chrome
+2026-06-01 17:19:11 [TestNG-test-Test-2] INFO  base.BaseClass - Application launched: https://automationexercise.com
+2026-06-01 17:19:11 [TestNG-test-Test-2] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:11 [TestNG-test-Test-2] INFO  listeners.TestListener - TEST STARTED: verifyLogin
+2026-06-01 17:19:11 [TestNG-test-Test-2] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:11 [TestNG-test-Test-2] INFO  testcases.LoginTest - === Starting verify LoginTest ===
+2026-06-01 17:19:11 [TestNG-test-Test-2] INFO  testcases.LoginTest - Clicking Signup/Login button
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  base.BaseClass - Application launched: https://automationexercise.com
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  listeners.TestListener - TEST STARTED: verifyApplicationLaunch
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  testcases.LaunchTest - === Starting LaunchTest ===
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  testcases.LaunchTest - Getting the page title
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  listeners.TestListener - ✅ TEST PASSED: verifyApplicationLaunch
+2026-06-01 17:19:12 [TestNG-test-Test-1] INFO  base.BaseClass - Closing browser
+2026-06-01 17:19:12 [TestNG-test-Test-3] INFO  base.BaseClass - Application launched: https://automationexercise.com
+2026-06-01 17:19:12 [TestNG-test-Test-3] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:12 [TestNG-test-Test-3] INFO  listeners.TestListener - TEST STARTED: verifyInvalidLogin
+2026-06-01 17:19:12 [TestNG-test-Test-3] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:12 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - === Starting verifyInvalidLogin test ===
+2026-06-01 17:19:12 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - Clicking Signup/Login button
+2026-06-01 17:19:14 [TestNG-test-Test-1] INFO  base.BaseClass - Browser selected: chrome
+2026-06-01 17:19:15 [TestNG-test-Test-2] INFO  testcases.LoginTest - Entering email: krishnasai7466@gmail.com
+2026-06-01 17:19:16 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - Entering wrong email
+2026-06-01 17:19:17 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - Entering wrong password
+2026-06-01 17:19:17 [TestNG-test-Test-2] INFO  testcases.LoginTest - Entering password
+2026-06-01 17:19:18 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - Clicking login button
+2026-06-01 17:19:18 [TestNG-test-Test-2] INFO  testcases.LoginTest - Clicking login button
+2026-06-01 17:19:22 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - Is invalid login message displayed: true
+2026-06-01 17:19:22 [TestNG-test-Test-3] INFO  testcases.NegativeLoginTest - Negative login assertion PASSED
+2026-06-01 17:19:22 [TestNG-test-Test-3] INFO  listeners.TestListener - ✅ TEST PASSED: verifyInvalidLogin
+2026-06-01 17:19:22 [TestNG-test-Test-3] INFO  base.BaseClass - Closing browser
+2026-06-01 17:19:24 [TestNG-test-Test-2] INFO  testcases.LoginTest - Is user logged in: true
+2026-06-01 17:19:24 [TestNG-test-Test-2] INFO  testcases.LoginTest - Login assertion PASSED
+2026-06-01 17:19:25 [TestNG-test-Test-1] INFO  base.BaseClass - Application launched: https://automationexercise.com
+2026-06-01 17:19:25 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:25 [TestNG-test-Test-1] INFO  listeners.TestListener - TEST STARTED: verifyLoginWithMultipleData
+2026-06-01 17:19:25 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:25 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - === DataDriven Login Test ===
+2026-06-01 17:19:25 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - Email: krishnasai7466@gmail.com | Expected: valid
+2026-06-01 17:19:26 [TestNG-test-Test-2] INFO  testcases.LoginTest - Logged out successfully
+2026-06-01 17:19:26 [TestNG-test-Test-2] INFO  listeners.TestListener - ✅ TEST PASSED: verifyLogin
+2026-06-01 17:19:26 [TestNG-test-Test-2] INFO  base.BaseClass - Closing browser
+2026-06-01 17:19:32 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - Valid login assertion PASSED
+2026-06-01 17:19:34 [TestNG-test-Test-1] INFO  listeners.TestListener - ✅ TEST PASSED: verifyLoginWithMultipleData
+2026-06-01 17:19:34 [TestNG-test-Test-1] INFO  base.BaseClass - Closing browser
+2026-06-01 17:19:34 [TestNG-test-Test-1] INFO  base.BaseClass - Browser selected: chrome
+2026-06-01 17:19:39 [TestNG-test-Test-1] INFO  base.BaseClass - Application launched: https://automationexercise.com
+2026-06-01 17:19:39 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:39 [TestNG-test-Test-1] INFO  listeners.TestListener - TEST STARTED: verifyLoginWithMultipleData
+2026-06-01 17:19:39 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:39 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - === DataDriven Login Test ===
+2026-06-01 17:19:39 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - Email: wrongemail@gmail.com | Expected: invalid
+2026-06-01 17:19:45 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - Invalid login assertion PASSED
+2026-06-01 17:19:45 [TestNG-test-Test-1] INFO  listeners.TestListener - ✅ TEST PASSED: verifyLoginWithMultipleData
+2026-06-01 17:19:45 [TestNG-test-Test-1] INFO  base.BaseClass - Closing browser
+2026-06-01 17:19:45 [TestNG-test-Test-1] INFO  base.BaseClass - Browser selected: chrome
+2026-06-01 17:19:54 [TestNG-test-Test-1] INFO  base.BaseClass - Application launched: https://automationexercise.com
+2026-06-01 17:19:54 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:54 [TestNG-test-Test-1] INFO  listeners.TestListener - TEST STARTED: verifyLoginWithMultipleData
+2026-06-01 17:19:54 [TestNG-test-Test-1] INFO  listeners.TestListener - ====================================
+2026-06-01 17:19:54 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - === DataDriven Login Test ===
+2026-06-01 17:19:54 [TestNG-test-Test-1] INFO  testcases.DataDrivenLoginTest - Email:   | Expected: invalid
+2026-06-01 17:20:08 [TestNG-test-Test-1] ERROR listeners.TestListener - ❌ TEST FAILED: verifyLoginWithMultipleData
+2026-06-01 17:20:08 [TestNG-test-Test-1] ERROR listeners.TestListener - Reason: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//p[text()='Your email or password is incorrect!']"}
+  (Session info: chrome=148.0.7778.216)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0fb66ea2e3949d208da6788ce8da2f23, findElement {using=xpath, value=//p[text()='Your email or password is incorrect!']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.216, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59236}, goog:processID: 8064, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59236/devtoo..., se:cdpVersion: 148.0.7778.216, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0fb66ea2e3949d208da6788ce8da2f23
+2026-06-01 17:20:08 [TestNG-test-Test-1] INFO  utilities.ScreenshotUtils - Screenshot saved at: D:\Eclipse\OpenCart_RealTestNGFramework\screenshots\verifyLoginWithMultipleData_20260601_172008.png
+2026-06-01 17:20:08 [TestNG-test-Test-1] INFO  base.BaseClass - Closing browser
+2026-06-01 17:20:09 [main] INFO  listeners.TestListener - ====================================
+2026-06-01 17:20:09 [main] INFO  listeners.TestListener - SUITE FINISHED
+2026-06-01 17:20:09 [main] INFO  listeners.TestListener - Total Passed  : 5
+2026-06-01 17:20:09 [main] INFO  listeners.TestListener - Total Failed  : 1
+2026-06-01 17:20:09 [main] INFO  listeners.TestListener - Total Skipped : 0
+2026-06-01 17:20:09 [main] INFO  listeners.TestListener - ====================================
+2026-06-01 17:20:11 [main] INFO  listeners.TestListener - ExtentReport saved to /reports/AutomationReport.html

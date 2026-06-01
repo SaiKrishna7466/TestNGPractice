@@ -7,8 +7,6 @@ import abstractComponents.BasePage;
 
 public class LoginPage extends BasePage {
 	
-	WebDriver driver;
-	
 	//constructor
 	public LoginPage(WebDriver driver) {
 		

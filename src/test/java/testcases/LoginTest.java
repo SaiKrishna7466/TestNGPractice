@@ -7,49 +7,60 @@ import org.testng.annotations.Test;
 import base.BaseClass;
 import pageObjects.LoginPage;
 import pageObjects.HomePage;
-import utilities.ReadConfig;
+//import utilities.ReadConfig;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-
-
 
 public class LoginTest extends BaseClass{
 	
-	@BeforeMethod
+	Logger logger = LogManager.getLogger(LoginTest.class);
+	
+	@BeforeMethod(alwaysRun = true)
 	public void startApplication() {
 		setup();
 	}
 	
-	@Test
+	@Test(groups = {"smoke", "regression", "sanity"})
 	public void verifyLogin() {
 		
-		LoginPage lp = new LoginPage(driver);
-		HomePage hp = new HomePage(driver);
+		LoginPage lp = new LoginPage(getDriver());
+		HomePage hp = new HomePage(getDriver());		
 		
-		ReadConfig readConfig = new ReadConfig();
-		
-		System.out.println("Entered");
+		logger.info("=== Starting verify LoginTest ===");
 		
 		String email = readConfig.getEmail();
 		System.out.println(email);
 		String password = readConfig.getPassword();
 		System.out.println(password);
 		
+		logger.info("Clicking Signup/Login button");
 		lp.clickSignupLogin();
+		
+		logger.info("Entering email: " + email);
 		lp.enterEmail(email);
+		
+		logger.info("Entering password");
 		lp.enterPassword(password);
+		
+		logger.info("Clicking login button");
 		lp.clickLoginButton();
 		
-		Assert.assertTrue(hp.isUserLoggedIn());
-		System.out.println("Login successful");
+		boolean isLoggedIn = hp.isUserLoggedIn();
+		
+		logger.info("Is user logged in: " + isLoggedIn);
+		Assert.assertTrue(isLoggedIn);
+		logger.info("Login assertion PASSED");
 		
 		hp.clickLogout();
+		logger.info("Logged out successfully");
 		
 	}
 	
-	@AfterMethod
+	@AfterMethod(alwaysRun = true)
 	public void closeApplication() {
-//		tearDown();
+		tearDown();
 	}
 
 }

@@ -2,46 +2,64 @@ package base;
 
 import java.time.Duration;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utilities.ReadConfig;
 
 public class BaseClass {
 	
-	public static WebDriver driver;
+	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 	
-	ReadConfig readConfig = new ReadConfig();
+	protected ReadConfig readConfig = new ReadConfig();
+	
+	//logger
+	public static Logger logger = LogManager.getLogger(BaseClass.class);
+	
+	// getter — always use this to get driver
+	public static WebDriver getDriver() {
+		return tlDriver.get();
+	}
 	
 	public void setup() {
 		
 		String browser = readConfig.getBrowser();
+		logger.info("Browser selected: " + browser);
 		
-		if(browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			
-			driver = new ChromeDriver();
-		}	
+		WebDriver driver;
 		
+		if (browser.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            driver = new ChromeDriver();
+        } else if (browser.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            driver = new FirefoxDriver();
+        } else {
+            logger.error("Browser not supported: " + browser);
+            throw new RuntimeException("Browser not supported: " + browser);
+        }		
 		
-		driver.manage().window().maximize();
-		
+		driver.manage().window().maximize();		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		
-		driver.get(readConfig.getApplicationURL());
-		
-		try {
-			Thread.sleep(5000);
-		}catch(InterruptedException e) {
-			e.printStackTrace();
-		}
-		
+		// Set driver into ThreadLocal
+        tlDriver.set(driver);
+
+        String url = readConfig.getApplicationURL();
+        getDriver().get(url);
+        logger.info("Application launched: " + url);
 	}
 	
 	public void tearDown() {
 		
-		driver.quit();
+		logger.info("Closing browser");
+        getDriver().quit();
+        // Remove driver from thread after test
+        tlDriver.remove();
 		
 	}
 	
